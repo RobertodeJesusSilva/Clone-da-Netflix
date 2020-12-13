@@ -1,0 +1,104 @@
+:root{/*Declaração das variáveis*/
+    --vermelho: #e50914;
+    --preto: #141414;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;;
+}
+
+/*Elementos base*/
+body{
+    background: var(--preto);
+    font-family: Arial, Times, serif;
+    color: white;
+}
+
+.container{
+    margin-left: 0.8rem;
+}
+
+#logo{
+    color:var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+
+}
+
+.container a:hover{
+    color: #fff;
+}
+
+/*Filme principal*/
+
+.filme-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)100%), url(../img/the-walking-dead.jpg);
+    height: 30rem;
+    background-size: cover; 
+    box-sizing: border-box;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 3rem;
+    margin-top: 1rem
+}
+
+.filme-principal .titulo{
+    font-size: 3rem;
+    font-family: 'Trebuchet MS',  Arial, sans-serif;
+    margin-top: 1rem;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.botao{
+    background-color: rgba(0, 0, 0, 0.50);
+    border: none;
+    color: #fff;
+    padding: 1rem 2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease all; 
+}
+
+.botao:hover{
+    border: 0.1rem solid rgba(255, 255, 255, 0.5);
+    background-color: #fff;
+    color: #000;
+}
+
+.botao i{
+    margin-right:0.3rem;
+}
+
+.box-filmes{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carroussel{
+    margin-top: 1rem;
+}

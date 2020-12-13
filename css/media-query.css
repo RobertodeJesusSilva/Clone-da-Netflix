@@ -1,0 +1,29 @@
+@media (max-width: 500px){
+    header .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+    }
+
+    .filme-principal .titulo{
+        font-size: 2.5rem;
+    }
+
+    .botao{
+        margin-top: 0.5rem;
+        width: 18rem;
+        height: 3.5rem;
+        padding: 1rem;
+    }
+
+    .filme-principal{
+        height: 35rem;
+    }
+
+}
+
+@media (min-width: 1000px){
+    .filme-principal .descricao{
+        width: 65%;
+    }
+}
